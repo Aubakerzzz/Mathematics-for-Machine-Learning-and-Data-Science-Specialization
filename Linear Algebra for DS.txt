@@ -1,0 +1,198 @@
+Linear Algebra course
+**WEEK_1**
+Systems of Sentences:
+	System1:		System2:
+	The dog is black            The dog is black	
+	The cat is orange	    The dog is black
+	The bird is red		    The bird is red
+	=> complete		    => redundant
+	=> non-singular		    => singular
+
+	System3:		System4:
+	The dog is black            The dog is black	
+	The dog is black	    The dog is white
+	The dog is black 	    The bird is red
+	=> redundant	   	    => contradictory
+	=> singular		    => Singular
+
+	Unique Solution:
+	Non-Singular and complete
+	a + b  = 10
+	a + 2b = 12
+	a = 10 - b	
+	10 - b  +2b = 12
+	b = 12 - 10
+	b = 2
+	a = 10 - 2
+	a = 8	
+	checK:
+	8 + 4 = 12 (correct)
+	8 + 2 = 10 (correct)
+	intersects only 1's so unique solution
+	Redundant System => infinite many solution => Singular
+	apply = 5 , banana  = 5 also work etc
+	a + b = 10
+	2a + 2b = 20
+	a =  b - 10
+	2(b - 10) + 2b = 20
+	2b - 20 + 2b = 20
+	4b = 40
+	b = 10
+	a = 0
+	infinite many dots as intersect infinite time
+	not enough information => singular => contradictory => no solution
+
+	a + b = 10
+	2a + 2b = 24
+	a = 10 - b
+	20 - 2b +2b = 24
+	Parallel Lines
+	
+
+	Quiz:
+	3a + 2b = 8
+	2a - b = 3
+	=> 2a - 3 = b
+	3a + 2 ( 2a - 3 ) = 8
+	3a + 4a - 6 = 8
+	7a = 8 + 6
+	7a = 14
+	a = 2
+	b = 1
+	=> non-singular and unique also
+	
+	Singular Vs Non-Singular:
+		Linear Dep vs Linear InDep:
+			if one row is mulitple of another then it is linear dep and singular too
+	The determinant:
+		a	b
+		c	d
+		matrix is singular if:
+			ab *k =  cd
+			ak = c ; bk = d
+			a/c = k ; b/d = k
+			a/c = b/d = k
+			ad = bc 
+			ad - bc = 0
+			if det == 0:
+				matrix => singular 
+**WEEK_2**	
+	System of equations (3x3):
+		a + b + c = 10
+		a + 2b + c = 15
+		a + b + 2c = 12
+		
+		c = 10 - b - a
+		
+		a + 2b + 10 - b - a = 15
+		b = 15 - 10
+		b = 5
+
+		
+		b = 10 - c - a
+		
+		a + 10 - c - a + 2c = 12
+		c = 12 - 10
+		c = 2
+
+	Question:
+		a + b + c = 10
+		a + b +	2c = 15
+		a + b + 3c = 20
+
+		
+		a = 10 - b - c
+		
+		10 - b - c + b + 2c = 15
+		c = 5
+		
+		b = 10 - a - c
+		a + 10 -a - c - 3c = 20
+		only get c
+
+		c = 10 - a - b
+		
+		a + b + 2 ( 10 - a - b) = 15
+		a + b + 20 - 2a - 2b = 15
+		-a  -b + 20 = 15
+	Question:
+		c = 10 - a - b
+		a + b + 2 ( 10 - a - b ) = 15
+		a + b + 20 - 2a - 2b = 15
+		- a - b = -5
+		a + b = 5
+		b  = 5 - a
+		a + 5 - a + 2c = 15
+		c = 5
+	Singular vs non-singular matrices (3x3):
+		- constant doesn't matter for singularity
+		- uniq -> singluar -> complete
+	Linear dependence and independence (3x3):
+		row1 +row2 = row3
+		so row3 dep on row1 and row2
+		dep-> singular
+		nondep-> nonsingular
+	The determinant (3x3):
+	Solving non-singular system of linear equations:
+		Manipulating Equations:
+			For 3 equations:
+				use 1st and 2nd to remove a
+				use 2nd and 3rd to remove b from eq 2 and get value of c 
+				then back substitution
+	Matrix Row Reduction:
+		Elimination Method =? Echelon Form 
+		Rank Of Matrix:
+		rank of a matrix in general:
+		Row echelon form in general:
+**WEEK_3**
+
+	Orthogonal vector's dot prod always zero
+	identity matrix * any matrix gives the same matrix 
+	Matrix Inverse:
+	Which matrices have an inverse?:
+		Non-Singular matrix => Inverse possible => Invertible Matrix
+		Singular matrix =>  Inverse impossible => Non-Invertible Matrix
+		
+**WEEK_4**
+	Singularity and rank of linear transformations:
+		Non-Singular => whole plane to whole plane => Dim 2
+		Singular => Rank 1 => whole plane to line => Dim 1
+		Singular => Rank 2=> whole plane to dot => Dim 0
+	Determinant as an Area:
+		Det = 0 => Singular => Area/Vol = 0
+	Determinant of a product:
+		Area blows up to the factor by determinant
+			if det = 3 and first area is 2 then it transfor to  area of 6 
+		det(AB)=det(A)⋅det(B), if either A or B has determinant 0 (singular), it will vanish the product, therefore det(AB)=0 and the resulting matrix is singular.
+	Determinants of inverses:
+		det (A^-1) = 1 / det(A)
+	 Bases in Linear Algebra:
+	 Span in Linear Algebra:
+		Basis is minimal spanning set
+			1 element: Dimension 1
+			2 element: Dimension 2
+	Eigenbases:
+	Eigenvalues and eigenvectors:
+		finding eigen values:
+			O = matrix - eigen matrix
+			det(O)
+			
+		
+				
+		 
+		
+		 
+			
+		
+		
+		
+
+		
+		
+	 
+	
+	
+		
+		
+	
+
